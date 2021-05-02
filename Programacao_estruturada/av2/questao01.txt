@@ -1,0 +1,28 @@
+desconto de 15% -> produtos magazine
+aumento de 25% -> supermercado
+
+prog mercado;
+inicioprog;
+real: valor, formula;
+char: local[20];
+imprima("Em qual voce vai comprar o produto? ");
+leia(compra);
+se(compra == 'supermercado' || compra == 'Supermercado' || compra == 'SUPERMERCADO')
+{
+  imprima("Digite o valor do produto: ");
+  leia(valor);
+formula <- (valor * 0.25) + valor;
+  imprima("\nO valor com o acréscimo 25% fica ",formula);
+}
+senao se(compra == 'magazine' || compra == 'Magazine' || compra == 'MAGAZINE')
+{
+  imprima("Digite o valor do produto: ");
+  leia(valor);
+formula <- valor - (valor * 0.15);
+  imprima("\nO valor com o desconto de 15% fica ",formula);
+}
+senao
+{
+  imprima("opção inválida");
+}
+fimprog mercado

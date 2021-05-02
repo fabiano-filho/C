@@ -1,0 +1,138 @@
+Questão03:
+
+incioprog;
+int: n;
+imprima("Digite um número: ");
+leia(n);
+se(n % 2 == 0)
+{
+  imprima("O numero n é positivo", n);
+  se(n < 0)
+  { 
+    imprima(" e negativo");
+  }
+  senao {
+    imprima(" e positivo");
+  }
+senao {
+  imprima("O número n é ímpar");
+  se(n < 0)
+  { 
+    imprima(" e negativo");
+  }
+  senao {
+    imprima(" e positivo");
+  }	
+}
+fimprog
+
+Questão04:
+
+inicioprog;
+real: altura, calculo;
+char: sexo;
+imprima("Digite seu sexo: ");
+leia(sexo);
+imprima("Digite sua altura: ");
+leia(altura);
+se(sexo == 'feminino' || sexo == 'Feminino')
+{
+	calculo <- (62.1 * altura) – 44,7;
+	imprima("Seu peso ideal baseado em seu sexo e altura é: ", calculo);
+}
+senao {
+	calculo <- (62,1 * altura) – 44,7;
+	imprima("Seu peso ideal baseado em seu sexo e altura é: ", calculo);
+}
+fimprog
+
+Questão07:
+
+inicioprog;
+char: nome;
+int: n1, n2, n3, media;
+imprima("Digite seu nome: ");
+leia(nome);
+imprima("Digite a sua primeira nota: ");
+leia(n1);
+imprima("Digite a sua segunda nota: ");
+leia(n2);
+imprima("Digite a sua terceira nota: ");
+leia(n3);
+media <- (n1 + n2 + n3) / 3;
+se(media >= 7)
+{  
+  imprima("Parabens, ! Você foi aprovado com a média de: ", nome, media);
+}
+senao se(media > 5 && media < 7)
+{
+ imprima(" , sua média de  não foi suficiente para passar. Você precisa fazer a recuperação", nome, media);
+}
+senao {
+ imprima(" , sua média de  não foi o suficiente. Você está reprovado!", nome, media);
+}
+fimprog
+
+Questão08:
+
+inicioprog;
+int n1, n2;
+imprima("Digite um número: ");
+leia(n1);
+imprima("Digite outro número: ");
+leia(n2);
+se(n1 == n2)
+{
+  imprima("Os número são iguais");
+}
+senao se(n1 > n2)
+{
+ imprima("Os números são diferentes\n");
+ imprima("O número n1 é maior que n2", n1, n2);
+}
+senao {
+ imprima("Os números são diferentes\n");
+ imprima("O número n2 é maior que n1", n2, n1);
+}
+fimprog
+///////////////////////////////////////////////////////////////////////////////
+
+inicioprog;
+real: peso, formula;
+int: opcao;
+imprima("Digite o peso: ");
+leia(peso);
+imprima("Escolha um planeta abaixo para converter a massa para peso no planeta escolhido\n");
+imprima("[ 1 ]  Mercúrio\n [ 2 ] Vênus\n [ 3 ] Marte\n [ 4 ] Júpiter\n [ 5 ] Saturno\n [ 6 ] Urano\n")
+leia(opcao);
+	caso(opcao)
+	{
+	1:
+	formula = (peso/10) * 0.37;
+	imprima("O peso é: ", formula);
+	pare;
+	2:
+	formula = (peso/10) * 0.88;
+	imprima("O peso é: ", formula);
+	pare;
+	3:
+	formula = (peso/10) * 0.38;
+	imprima("O peso é: ", formula);
+	pare;
+	4:
+	formula = (peso/10) * 2.64;
+	imprima("O peso é: ", formula);
+	pare;
+	5:
+	formula = (peso/10) * 1.15;
+	imprima("O peso é: ", formula);
+	pare;
+	6:
+	formula = (peso/10) * 1.17;
+	imprima("O peso é: ", formula);
+	pare;
+	senao
+	{
+	  imprima("Opção inválida");
+	} }
+fimprog

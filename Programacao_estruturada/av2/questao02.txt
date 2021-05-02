@@ -1,0 +1,20 @@
+Prog 02
+inicioprog 02;
+real: media, valor;
+int: soma = 0, i = 0, cont;
+imprima("Digite um numero: ");
+leia(num);
+cont <- valor;
+enquanto(valor > 0)
+{
+  se(valor > 0)
+  {
+    i++;
+  }
+  imprima("Digite um numero: ");
+  leia(valor);
+  soma <- soma + valor;
+  }
+  media <- (soma + cont) / i;
+imprima("\nA media é ", media);
+fimprog 02

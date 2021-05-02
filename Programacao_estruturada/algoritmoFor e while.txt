@@ -1,0 +1,37 @@
+prog01
+inicioprog01;
+real: media, peso;
+int:i = 0;
+enquanto(peso < 10)
+{
+ imprima("Digite um peso");
+ leia(peso);
+ peso <- i + peso
+ peso++;
+}
+media <- peso / 10;
+imprima("a media é", media);
+
+prog02
+inicioprog02;
+real: media;
+int i, n, soma = 0;
+para (i <- 0 até 49)
+{
+ imprima("Digite um numero: ")'
+ leia(n);
+ soma <- soma + n;
+}
+media <- soma / 50;
+fimprog;
+
+inicioprog;
+int cont, n;
+imprima("Digite um numero: ");
+leia(n);
+for (cont <- 1 ate 10)
+{
+ imprima(n," X ", cont," = ", cont*n); 
+ imprima("\n");
+}
+fimprog

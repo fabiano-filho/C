@@ -1,0 +1,31 @@
+inicioprog;
+int: i, tam, pos <- 0, neg <- 0, num[tam], soma <- 0;
+real: percentP, percentN, media;
+
+imprima("\nDigite a quantidade de números que você quer digitar: ");
+leia(tam);
+
+para (i <- 0 até tam)
+{
+  imprima("\nDigite um número inteiro: ");
+  leia(num[i]);
+  soma <- soma + num[i];
+  se(num[i] >= 0)
+  {
+    pos <- pos + 1;
+  }
+  senao
+  {
+    neg <- neg + 1;
+  }
+}
+media <- soma / tam;
+percentP <- (pos * 100) / tam;
+percentN <- (neg * 100 * (-1)) / tam;
+imprima("\nA media dos números digitados é: ", media);
+imprima("\nA quantidade de números negativos digitados foi: ", neg);
+imprima("\nA quantidade de números positivos digitados foi: ", pos);
+imprima("\nA porcentagem de números positivos digitados foi: ", percentP, "%");
+imprima("\nA porcentagem de números negativos digitados foi: ", percentN, "%");
+
+fimprog

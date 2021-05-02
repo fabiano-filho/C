@@ -1,0 +1,25 @@
+incioprog;
+int: maior <- 0, menor <- 100, i;
+real: altura[15];
+
+para (i <- 0 até 15)
+{
+  imprima("Digite a altura da pessoa ", i);
+  leia(altura[i]);
+  se(altura[i] > maior)
+  {
+    maior <- altura[i];
+  }
+}
+para (i <- 0 até 15)
+{
+  se(altura[i] < menor)
+  {
+    menor <- altura[i];
+  }
+}
+imprima("\nA maior altura é: ", maior);
+imprima("\nA menor altura é: ", menor);
+fimprog
+
+

@@ -1,0 +1,74 @@
+iniciopro;
+int: Numero;
+imprima("Digite um numero positivo: ");
+leia(Numero);
+se(Numero > 0)
+{
+  imprima("Positivo\n");
+}
+senao
+{
+  imprima("Negativo\n");
+}
+fimprog;
+
+inicioprog;
+int: n;
+imprima("Digite um numero: ");
+leia(n);
+se( n < 10)
+{	
+   imprima("O numero digitado é maior que 10");
+}
+senao
+{
+  imprima("O número digitado é menor que 10");
+}
+fimprog;
+
+inicioprog;
+float: n, resultado;
+imprima("Digite um numero: ");
+leia(n);
+se( n >= 20)
+{  
+   resultado <- n / 2;
+   imprima("A metade do numero digitado é igual a: ", resultado);
+}
+senao
+{
+  imprima("O número digitado é menor que 20");
+}
+fimprog
+
+inicioprog;
+str: sexo;
+imprima("Qual seu sexo? ");
+leia(sexo);
+se( sexo = "Masculino" || sexo = "Feminino")
+{  
+   imprima("sexo valido");
+}
+senao
+{
+  imprima("sexo invalido");
+}
+fimprog
+//
+inicioprog;
+int: n;
+imprima("Digite um numero entre 0-100: ");
+leia(n);
+se( n <= 100 && n >= 0 )
+{  
+   imprima("O valor n esta dentro do intervalo", n);
+}
+senao
+{
+  imprima("valor invalido");
+}
+fimprog
+
+
+
+
