@@ -1,0 +1,4 @@
+1 8 9 2 15 20 -> inicial
+1 8 2 9 15 20 -> depois da primeira passada = 1 troca realizada
+1 2 8 9 15 20 -> depois da segunda passada = 1 troca realizada
+Alternativa -> D - 1-2-8-9-15-20;

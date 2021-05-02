@@ -3,10 +3,15 @@
 
 int main()
 {   //variavel
-    int n = 1, fat;
-    //entrada
-    printf("Digite um numero: ");
-    scanf("%d", &n);
+    int n = 1, fat, i;
+    
+    
+    
+    for (i = 1; i <= 10; i++)
+    {
+        n = i;
+    }
+    
     //formula
     for(fat = 1; n <=10; n = n + 1)
     {
